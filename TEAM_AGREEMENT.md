@@ -6,7 +6,7 @@ Este documento establece las reglas de convivencia, comunicación y estándares 
 | Nombre | Rol | Usuario de GitHub |
 | :--- | :--- | :--- |
 | [victor cadavid] | Líder (Arquitecto) | `@victorcadavid16` |
-| [Nombre del Aprendiz 2] | Desarrollador | `@usuario2` |
+| [Yury Mantilla] | Desarrollador | `@yury1907` |
 | [Nombre del Aprendiz 3] | Desarrollador | `@usuario3` |
 
 ## 2. Canales de Comunicación
