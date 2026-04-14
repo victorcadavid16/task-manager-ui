@@ -3,10 +3,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --color-primario: #2D2A3E;
+  --color-secundario: #3B3654;
+  --color-terciario: #F5F7FA;
+  --color-morado: #4C3F91;
+  --color-blanco: #ffffff;
 
+
+  --color-azul: #3B82F6;
+  --color-negro: #0F172A;
+  --color-gris: #6B7280;
+
+  --color-exito: #22C55E;
+  --color-pendiente: #F59E0B;
+}
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #1abc9c, #3498db);
+  background: linear-gradient(135deg, var(--color-secundario), var(--color-morado));
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -19,7 +33,7 @@ body {
 }
 
 .registro-form {
-  background-color: #fff;
+  background-color: var(--color-blanco);
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -28,14 +42,14 @@ body {
 .registro-form h1 {
   text-align: center;
   margin-bottom: 20px;
-  color: #2c3e50;
+  color: var(--color-morado);
 }
 
 .registro-form label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
-  color: #34495e;
+  color: var(--color-morado);
 }
 
 .registro-form input,
@@ -43,24 +57,24 @@ body {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-negro);
   border-radius: 6px;
   font-size: 14px;
 }
 
 .registro-form input:focus,
 .registro-form select:focus {
-  border-color: #1abc9c;
+  border-color: var(--color-morado);
   outline: none;
 }
 
 .registro-form button {
   width: 100%;
   padding: 12px;
-  background-color: #1abc9c;
+  background-color:var(--color-morado);
   border: none;
   border-radius: 6px;
-  color: #fff;
+  color:var(--color-blanco);
   font-size: 16px;
   cursor: pointer;
   transition: background 0.3s ease;
@@ -70,8 +84,8 @@ body {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
-  background-color: #e74c3c;
-  color: #fff;
+  background-color: var(--color-negro);
+  color: var(--color-blanco);
   text-decoration: none;
   border-radius: 6px;
   font-size: 14px;
@@ -79,14 +93,18 @@ body {
 }
 
 .btn-volver {
-  background-color: #16a085;
+  background-color: var(--color-morado);
   display: flex;
   justify-content: center;
   
 }
 
+.btn-volver:hover {
+  background-color: var(--color-gris);
+}
+
 .registro-form button:hover {
-  background-color: #16a085;
+  background-color: var(--color-gris);
 }
 
 .login-link {
@@ -96,7 +114,7 @@ body {
 }
 
 .login-link a {
-  color: #3498db;
+  color: var(--color-gris);
   text-decoration: none;
 }
 
