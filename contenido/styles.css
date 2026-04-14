@@ -3,7 +3,20 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root {
+  --color-primario: #2D2A3E;
+  --color-secundario: #3B3654;
+  --color-terciario: #F5F7FA;
+  --color-morado: #4C3F91;
 
+
+  --color-azul: #3B82F6;
+  --color-negro: #0F172A;
+  --color-gris: #6B7280;
+
+  --color-exito: #22C55E;
+  --color-pendiente: #F59E0B;
+}
 body {
     background-color: #e3e1e9;
     font-family: Arial, sans-serif;
@@ -15,7 +28,7 @@ body {
   margin: auto;
   max-width: 250px;
   height: fit-content;
-  background: rgba(26, 38, 126, 0.79);
+  background: var(--color-primario);
   padding: 20px;
   border-radius: 20px;
   box-shadow: 5px 5px 10px rgba(#0f0f11b3);
@@ -73,7 +86,7 @@ label {
 
 .btn-login {
   width: 100%;
-  background-color: #cd35c3a8;
+  background-color:var(--color-morado);
   display: flex;
   justify-content: center;
   border: none;
@@ -87,7 +100,7 @@ label {
 }
 
 .btn-login:hover {
-  background-color: #f4f6f8;
+  background-color: var(--color-gris);
   transform:translateY(5px);
 }
 
