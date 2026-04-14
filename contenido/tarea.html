@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear Tarea</title>
+  <link rel="stylesheet" href="tarea.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>Gestor de Tareas</h1>
+  </header>
+
+  <main>
+    <section class="task-section">
+      <h2>Crear Nueva Tarea</h2>
+      <form class="form-create-task">
+        <div class="form-group">
+          <label for="titulo">Título de la tarea</label>
+          <input type="text" id="titulo" name="titulo" placeholder="Ej: Estudiar HTML" required>
+        </div>
+
+        <div class="form-group">
+          <label for="descripcion">Descripción</label>
+          <textarea id="descripcion" name="descripcion" rows="4" placeholder="Detalles de la tarea..."
+            required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="fecha">Fecha límite</label>
+          <input type="date" id="fecha" name="fecha" required>
+        </div>
+
+        <div class="form-group">
+          <label for="prioridad">Prioridad</label>
+          <select id="prioridad" name="prioridad" required>
+            <option value="">Selecciona una opción</option>
+            <option value="alta">Alta</option>
+            <option value="media">Media</option>
+            <option value="baja">Baja</option>
+          </select>
+        </div>
+
+        <a href="detalle-tarea.html" class="btn-volver"> Guardar Tarea</a>
+        <a href="dashboard.html" class="btn-volver">← Volver</a>
+
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>

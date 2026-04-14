@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-primario: #2D2A3E;
+  --color-secundario: #3B3654;
+  --color-terciario: #F5F7FA;
+  --color-morado: #4C3F91;
+  --color-blanco: #ffffff;
+
+
+  --color-azul: #3B82F6;
+  --color-negro: #0F172A;
+  --color-gris: #6B7280;
+
+  --color-exito: #22C55E;
+  --color-pendiente: #F59E0B;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, var(--color-secundario), var(--color-morado));
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.registro-form {
+  background-color: var(--color-blanco);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.registro-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--color-morado);
+}
+
+.registro-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--color-morado);
+}
+
+.registro-form input,
+.registro-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--color-negro);
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.registro-form input:focus,
+.registro-form select:focus {
+  border-color: var(--color-morado);
+  outline: none;
+}
+
+.registro-form button {
+  width: 100%;
+  padding: 12px;
+  background-color:var(--color-morado);
+  border: none;
+  border-radius: 6px;
+  color:var(--color-blanco);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-volver {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: var(--color-negro);
+  color: var(--color-blanco);
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.btn-volver {
+  background-color: var(--color-morado);
+  display: flex;
+  justify-content: center;
+  
+}
+
+.btn-volver:hover {
+  background-color: var(--color-gris);
+}
+
+.registro-form button:hover {
+  background-color: var(--color-gris);
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: var(--color-gris);
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
