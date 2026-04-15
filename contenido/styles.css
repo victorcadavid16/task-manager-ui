@@ -23,13 +23,14 @@ body {
 }
 
 .login {
+  
   position: fixed;
   inset: 0;
   margin: auto;
-  max-width: 250px;
+  max-width: 350px;
   height: fit-content;
   background: var(--color-primario);
-  padding: 20px;
+  padding: 40px;
   border-radius: 20px;
   box-shadow: 5px 5px 10px rgba(#0f0f11b3);
 }
